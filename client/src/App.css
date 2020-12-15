@@ -1,0 +1,285 @@
+body {
+  height: 100%;
+}
+
+.App {
+  text-align: center;
+  /* font-family: 'Squada One'; */
+  /* font-family: 'Roboto Mono', monospace; */
+}
+
+.pandemicHeader {
+  font-size: 80px;
+  font-family: 'Squada One';
+
+  
+  background-color: rgb(0, 0, 0, 0);
+  color: white;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Continents Container */
+
+.continents-container {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  top: 14%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Info Container */
+
+.info-container {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  color: black;
+  background: #ffffff99;
+  height: 219px;
+  width: 332px;
+  font-size: 14px;
+  border-radius: 5px;
+
+  box-shadow: inset 0px 0px 5px rgba(0,0,0,0.16), 0px 0px 5px rgba(0,0,0,0.45);
+}
+
+.info-title {
+  width: auto;
+  margin: 15px 0px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.info {
+  margin-top: 4%;
+  margin-left: 20px;
+  text-align: left;
+  padding-left: 14px;
+  font-size: 24px;
+}
+
+
+.continent {
+  font-size: 16px;
+  float: left;
+  margin: 27px;
+  color: whitesmoke;
+}
+
+.continent:hover {
+  color: #00bcd4;
+  cursor: pointer;
+}
+
+button.continent {
+  background: #00BCD4;
+}
+
+button.continent:hover {
+  background-color: #fff;
+  ;
+  color: black;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.globe {
+  width: 100%;
+  height: 700px;
+}
+
+.splash {
+  width: 100%;
+  height: 800px;
+  max-height: 800px;
+}
+
+/* News Container */
+
+.news-container {
+  position: absolute;
+  top: 336px;
+  left: 20px;
+  width: 344px;
+}
+
+.card {
+  display: flex;
+  width: 10rem;
+  height: auto;
+  font-size: 14px;
+  opacity: .7;
+  float: left;
+  margin-right: 11px;
+}
+
+.card-title {
+  margin-bottom: .75rem;
+  font-size: 10px;
+}
+
+img.card-img-top {
+  height: 100px;
+  object-fit: cover;
+}
+
+#news-link {
+  width: 88px;
+  font-size: 8px;
+}
+
+
+
+
+
+/* Splash Text */
+.splash-container{
+  position: absolute;
+  top: 40%;
+}
+
+.textEdit {
+  color: #cd0e00;
+  z-index: 3;
+  font-family: usual, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-shadow: 1px 1px 1px #fff;
+}
+
+.textEdit1 {
+  color: #ffc107;
+  z-index: 3;
+}
+
+.textEdit2 {
+  color: #80bdf2;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  opacity: 0.4;
+  z-index: 2;
+}
+
+.textEdit3 {
+  color: #80bdf2;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  opacity: 0.4;
+  z-index: 2;
+}
+
+.textEdit4{
+    background-color:#ff5722;
+}
+
+a.textEdit4 {
+  margin: 10px auto 0px auto;
+  border: none;
+}
+
+a.textEdit4:hover, a.textEdit4:focus {
+  background-color:#00bcd4;
+}
+
+
+.fade-in {
+	animation: fadeIn 3s;
+  	opacity: .4;
+}
+
+@keyframes fadeIn {
+  from {
+  	opacity: 0;
+  }
+  to {
+ 	opacity: .4;
+  }
+}
+
+
+
+@media only screen and (max-width: 850px) {
+  .continents-container {
+    position: fixed;
+    width: 86%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    top: 12%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    margin: 4px 18px;
+}
+.continent {
+  font-size: 16px;
+  float: none;
+  margin: 6px auto 0px 0px;
+  color: whitesmoke;
+}
+  .news-container {
+    display: none;
+  }
+  .info {
+    margin-top: 4%;
+    text-align: left;
+    padding-left: 14px;
+    font-size: 18px;
+  }
+  .info-container {
+    position: absolute;
+    top: 791px;
+    top: none;
+    left: 20px;
+    color: black;
+    background: #ffffff99;
+    height: 196px;
+    width: 332px;
+    /* font-size: 14px; */
+    border-radius: 5px;
+}
+}
